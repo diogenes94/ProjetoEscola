@@ -19,6 +19,6 @@ public class Aluno extends Pessoa {
     private String matricula;
     private LocalDateTime dataMatricula;
     
-    @ManyToMany
+    @ManyToMany(mappedBy = "alunos")
     private List<Turma> turmas = new ArrayList<>();
 }
